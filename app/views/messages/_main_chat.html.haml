@@ -1,0 +1,27 @@
+.main
+  .main__header
+    .main__header__leftbox
+      %h2.main__header__current-group
+        = @group.name
+      %ul.main__header__memberlist  
+        %p Member:
+        - @group.users.each do |user|
+          %li.main__header__memberlist_first
+            = user.name
+ 
+    .main__header__edit-btn
+      = link_to "Edit", edit_group_path(@group), class:"btn"
+
+  .main__messages
+    = render @messages
+
+  .main__form
+    = form_for [@group, @message] do |f|
+      = f.text_field :content, class:"main__form__message"
+      = f.label :image, class: 'main__form__message__new-photo' do
+        = icon('fas', 'image', class: 'icon')
+        = f.file_field :image, class: 'main__form__message__new-photo__image'
+      = f.submit 'Send', class: 'main__form__send'
+
+
+
