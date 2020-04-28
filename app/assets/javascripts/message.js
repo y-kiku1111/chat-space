@@ -1,44 +1,44 @@
 $(function () {
   
-  function buildHTML(message) {
-    if (message.image) {
-      var html = `<div class="main__messages__list" data-message-id="${message.id}">
-        <div class="main__messages__leftbox" >
-        <div class="main__messages__leftbox__name">
-        ${message.user_name}
-        </div>
-        <div class="main__messages__leftbox__time">
-          ${message.created_at}
-        </div>
-      </div>
-      <div class="main__messages__text">
-        <p class="lower-message__content">
-          ${message.content}
-          </p>
-        <div class="lower-message__image">
-        <img src=${message.image} >
-        </div>
-      </div>`
-      return html;
-    } else {
-      var html =
-      `<div class="main__messages__list" data-message-id="${message.id}">
-      <div class="main__messages__leftbox">
-           <div class="main__messages__leftbox__name">
-             ${message.user_name}
-             </div>
-           <div class="main__messages__leftbox__time">
-           ${message.created_at}
-           </div>
-           </div>
-         <div class="main__messages__text">
-           <p class="lower-message__content">
-           ${message.content}
-           </p>
-         </div>`
-         return html;
-    };
-  }
+  // function buildHTML(message) {
+  //   if (message.image) {
+  //     var html = `<div class="main__messages__list" data-message-id="${message.id}">
+  //       <div class="main__messages__leftbox" >
+  //       <div class="main__messages__leftbox__name">
+  //       ${message.user_name}
+  //       </div>
+  //       <div class="main__messages__leftbox__time">
+  //         ${message.created_at}
+  //       </div>
+  //     </div>
+  //     <div class="main__messages__text">
+  //       <p class="lower-message__content">
+  //         ${message.content}
+  //         </p>
+  //       <div class="lower-message__image">
+  //       <img src=${message.image} >
+  //       </div>
+  //     </div>`
+  //     return html;
+  //   } else {
+  //     var html =
+  //     `<div class="main__messages__list" data-message-id="${message.id}">
+  //     <div class="main__messages__leftbox">
+  //          <div class="main__messages__leftbox__name">
+  //            ${message.user_name}
+  //            </div>
+  //          <div class="main__messages__leftbox__time">
+  //          ${message.created_at}
+  //          </div>
+  //          </div>
+  //        <div class="main__messages__text">
+  //          <p class="lower-message__content">
+  //          ${message.content}
+  //          </p>
+  //        </div>`
+  //        return html;
+  //   };
+  // }
 
 $('#new_message').on('submit', function (e) {
   e.preventDefault()
