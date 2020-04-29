@@ -76,6 +76,7 @@ a {
     &__latest{
       font-size: 11px;
       color:$mainWhiteColor;
+      margin-bottom: 40px;
     }
   }
 }
@@ -112,10 +113,13 @@ a {
         color: #38aef0;
         font-size: 16px;
         margin-top: 28px;
-        padding: 0px 20px;
+
 
         .btn{
         color: #38aef0;
+        padding: 10px 20px;
+        border: 2px solid #38aef0;
+        margin-right: 40px;
         }
 
       } 
@@ -185,9 +189,9 @@ a {
     }
 
     &__send{
-      background-color: #eeeeee;
+      background-color: #38aef0;
       width: 100px;
-      color: #1a1d21;
+      color: #ffffff;
       font-size: 15px;
       padding: 0 30px;
       margin-left: 15px;
