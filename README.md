@@ -9,7 +9,6 @@
 - belongs_to :user
 
 
-
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
