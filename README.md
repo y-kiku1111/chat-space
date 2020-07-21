@@ -22,7 +22,6 @@
 - has_many:groups_users
 
 
-
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
