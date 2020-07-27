@@ -32,7 +32,6 @@
 - has_many:groups_users
 
 
-
 ## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
