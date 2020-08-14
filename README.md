@@ -33,6 +33,7 @@
 
 
 
+
 ## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
